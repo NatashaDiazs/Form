@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>formulario </title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" href="form.png" type="image">
+  </head>
+  <body>
+    <div class="titulo"> 
+        <h1 id="title"> Formulario </h1>
+        <p>Gracias por preferirnos como su empresa de estudio aliada, por favor complete el siguiente registro</p>
+    </div> <br>
+    <div class="card"> 
+      <form action="#" method="get" id="formulario">
+      <div> 
+        <h4>Nombre *</h4>
+        <span class="icon"><ion-icon name="arrow-forward-circle"></ion-icon></span> 
+        <input type="text" placeholder="Ingrese su nombre" required> 
+      </div>
+      <div>
+        <h4>Apellido *</h4>
+        <span class="icon"><ion-icon name="arrow-forward-circle"></ion-icon></span> 
+        <input type="text" placeholder="ingrese su apellido" required>
+      </div>
+      <div class="email">  
+        <h4> Correo Electronico *</h4> 
+        <span class="icon"><ion-icon name="mail"></ion-icon></span> 
+        <input type="email" placeholder="Ingrese su Email" required> 
+      <div> 
+        <label for="telefono"><h4> Numero Telefonico *</h4></label>
+        <span class="icon"><ion-icon name="call"></ion-icon></span> 
+        <input type="text" placeholder="ingrese su numero"> 
+      </div>
+      <div> 
+        <h4> Por favor indique su edad</h4>
+        <span class="icon"><ion-icon name="accessibility"></ion-icon></span>
+        <!-- este el codigo del icono -->
+        <input type="number" min="14" max="80"> 
+      </div>
+      <div>
+        <h4> En cuales de nuestros cursos está interesado/a?</h4>
+        <select name="selector" id="selector">
+          <option value="no"></option>
+          <option value="Dibujo">Dibujo</option>
+          <option value="mec">Mecanica</option>
+          <option value="Elec">Electronica</option>
+          <option value="mar"> Marketing</option>
+          <option value="ilu">Ilustracion</option>
+          <option value="fot">Fotografia</option>
+          <option value="prog">Programacion</option>
+          <option value="his">Historia</option>
+          <option value="dise">Diseño 3D</option>
+          <option value="idi">Idiomas</option>
+        </select>
+      </div>
+      <div class="check">
+        <h4> Cual es su prioridad para este curso?</h4>
+        <label for="Prac"><input type="checkbox" value="p">Practica</label>
+        <label for="teo"><input type="checkbox" value="p"> Teoria </label>
+        <label for="cer"><input type="checkbox" value="p"> Certificado</label> <br>
+        <label for="ases"><input type="checkbox" value="p">Mentorias</label>
+        <label for="met"><input type="checkbox" value="p"> Metodos</label>
+      </div>
+      <div class="radio"> 
+        <h4>Le gustaria obtener avisos de proximas actulizaciones?</h4>
+        <label for="yes"><input type="radio" name="yes">Yes</label>
+        <label for="no"><input type="radio" name="yes"> No</label>
+      </div>
+      <div>
+        <h4> Nos gustaria saber como conocio nuestra pagina</h4>
+        <textarea id="sug" name="sugerencia" rows="3" cols="50" placeholder="escriba su mensaje aqui"></textarea>
+      </div>
+      </form> <br>  
+        <button type="submit" form="formulario" value="enviar"> Enviar </button>
+    </div>  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script> 
+    <script  nomodule  src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- esto es para los logos del formulario -->
+  </body> <br>
+  <footer>
+    Para saber más acerca de nosotros puedes ingresar <a href="https://www.google.com/" target="_blank">aqui</a>
+  </footer>
+</html>
